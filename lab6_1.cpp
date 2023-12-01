@@ -7,7 +7,7 @@ int main()
     cout<<"Enter an integer: ";
     cin>>x;
     
-      //int even = x%2==0, odd = x%2!=0;
+
     int even = 0, odd = 0 ;
     while( x != 0){
         if(x%2!=0){
