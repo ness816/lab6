@@ -1,9 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    cout << "Enter an integer: ";
-    cout << "#Even numbers = ";
-    cout << "#Odd numbers = ";
+int main()
+{
+    int x;
+    cout<<"Enter an integer: ";
+    cin>>x;
+    
+      //int even = x%2==0, odd = x%2!=0;
+    int even = 0, odd = 0 ;
+    while( x != 0){
+        if(x%2!=0){
+            even++;
+        }else{
+            odd++;
+        }
+        cout<<"Enter an integer: ";
+        cin>>x;
+    } 
+    cout<<"#Even numbers = "<<odd<<endl;
+    cout<<"#Odd numbers = "<<even;
     return 0;
 }
